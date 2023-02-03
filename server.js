@@ -3,7 +3,7 @@ import Gamedig from 'gamedig';
 import axios from 'axios';
 
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 app.get('/', async (req, res) => {
     res.send('Try https://mgs-server.vercel.app/[platform]/[ip]');
