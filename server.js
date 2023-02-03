@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', async (req, res) => {
-    res.send('Try https://mgs-server.vercel.app/<platform>/<ip>');
+    res.send('Try https://mgs-server.vercel.app/[platform]/[ip]');
 });
 
 app.get('/:platform/:ip', async (req, res) => {
