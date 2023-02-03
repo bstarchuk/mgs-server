@@ -14,9 +14,7 @@ app.get('/:platform/:ip', async (req, res) => {
         const {platform, ip} = req.params;
         const [host, port] = ip.split(':')
 
-        if (platform === 'discord') {
-
-        } else if (platform === 'scum') {
+        if (platform === 'scum') {
             axios.get(`https://api.hellbz.de/scum/api.php?address=${host}&port=${port}`)
                 .then((response) => {
                     res.send({game: platform, ip, data: response.data})
